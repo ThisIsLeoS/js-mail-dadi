@@ -9,9 +9,12 @@ var player1Result = Math.floor(Math.random() * 6) + 1;
 var player2Result = Math.floor(Math.random() * 6) + 1;
 
 // players are showned their result
-document.getElementsByClassName("player1-result-msg")[0].textContent = player1Name + ", the result of your dice roll is " + player1Result;
-document.getElementsByClassName("player2-result-msg")[0].textContent = player2Name + ", the result of your dice roll is " + player2Result;
-
+document.getElementsByClassName("player1-result-msg")[0].textContent = player1Name + ", the " +
+                                                                       "result of your dice roll " +
+                                                                       "is " + player1Result;
+document.getElementsByClassName("player2-result-msg")[0].textContent = player2Name + ", the " +
+                                                                       "result of your dice roll " +
+                                                                       "is " + player2Result;
 // players are showned who is the winner
 var whoWinsMsg = "Nobody wins!";
 if (player1Result > player2Result) whoWinsMsg = player1Name + " wins!";
