@@ -17,6 +17,12 @@ document.getElementsByClassName("player2-result-msg")[0].textContent = player2Na
                                                                        "is " + player2Result;
 // players are showned who is the winner
 var whoWinsMsg = "Nobody wins!";
-if (player1Result > player2Result) whoWinsMsg = player1Name + " wins!";
-else if (player1Result < player2Result) whoWinsMsg = player2Name + " wins!";
+if (player1Result > player2Result) 
+{
+    whoWinsMsg = player1Name + " wins!";
+} 
+else if
+{
+    (player1Result < player2Result) whoWinsMsg = player2Name + " wins!";
+}
 document.getElementsByClassName("who-wins-msg")[0].textContent = whoWinsMsg;
