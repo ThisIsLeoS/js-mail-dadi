@@ -21,8 +21,8 @@ if (player1Result > player2Result)
 {
     whoWinsMsg = player1Name + " wins!";
 } 
-else if
+else if (player1Result < player2Result)
 {
-    (player1Result < player2Result) whoWinsMsg = player2Name + " wins!";
+    whoWinsMsg = player2Name + " wins!";
 }
 document.getElementsByClassName("who-wins-msg")[0].textContent = whoWinsMsg;
